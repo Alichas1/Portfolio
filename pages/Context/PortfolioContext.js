@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 const PortfolioContext = createContext();
 
 // PortfolioProvider component to wrap your app with context
-export const PortfolioProvider = ({ children }) => {
+export default function PortfolioProvider({ children }) {
   const [projects, setProjects] = useState([]);
   const [techSkills, setTechSkills] = useState([]);
 
@@ -34,7 +34,7 @@ export const PortfolioProvider = ({ children }) => {
       {children}
     </PortfolioContext.Provider>
   );
-};
+}
 
 // Custom hook to use the PortfolioContext in components
 export const usePortfolio = () => useContext(PortfolioContext);

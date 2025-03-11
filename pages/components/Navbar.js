@@ -2,7 +2,7 @@ import Link from "next/link";
 import Admin from "../admin";
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-around px-5 py-4 gap-6 w-full text-lg bg-blue-300 ">
+    <nav className="flex items-center justify-around px-5 py-4 w-full text-lg bg-blue-100">
       <div>Ali</div>
       <ul className="flex gap-4 rounded-lg border border-gray-200 px-3 py-4">
         <Link href={"/"}>

@@ -31,9 +31,12 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center mt-8 ">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 bg-white rounded-lg pl-4 pr-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {techSkills.map((skillImage, index) => (
-              <div key={index} className=" px-4 py-2 rounded-lg text-center">
+              <div
+                key={index}
+                className=" px-4 py-2 rounded-lg text-center  bg-white"
+              >
                 {/* Displaying the image for the skill */}
                 <img
                   src={skillImage}

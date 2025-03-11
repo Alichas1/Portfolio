@@ -1,9 +1,4 @@
 export default function Card({ project }) {
-  if (!project) {
-    // Handle the case where project is undefined
-    return <div>Error: No project data available</div>;
-  }
-
   return (
     <div className="max-w-sm w-full h-[450px] rounded-lg overflow-hidden shadow-lg border-2 mt-10 bg-white relative">
       {/* Image section */}
